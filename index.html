@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bill Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Vegetable / Fruit Bill Calculator</h1>
+
+      <!-- Input Section -->
+      <div class="input-section">
+        <div class="input-group">
+          <label>Item Name</label>
+          <input type="text" id="itemName" placeholder="e.g., Apple" />
+        </div>
+
+        <div class="input-group">
+          <label>Price per Kg (₹)</label>
+          <input type="number" id="pricePerKg" placeholder="e.g., 120" />
+        </div>
+
+        <div class="input-group">
+          <label>Quantity (grams)</label>
+          <input type="number" id="grams" placeholder="e.g., 500" />
+        </div>
+
+        <button id="addBtn">Add Item</button>
+      </div>
+
+      <!-- Bill List -->
+      <h2>Bill Items</h2>
+
+      <div class="table-wrapper">
+        <table id="billTable">
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Price/Kg (₹)</th>
+              <th>Qty (g)</th>
+              <th>Amount (₹)</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="billBody">
+            <!-- Dummy Sample Items -->
+            <!-- <tr>
+              <td>Tomato</td>
+              <td>40</td>
+              <td>500</td>
+              <td>20</td>
+              <td><button class="removeBtn">X</button></td>
+            </tr>
+
+            <tr>
+              <td>Banana</td>
+              <td>60</td>
+              <td>1000</td>
+              <td>60</td>
+              <td><button class="removeBtn">X</button></td>
+            </tr> -->
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Total Section -->
+      <div class="total-section">
+        <h3>Total Amount: ₹ <span id="totalAmount"></span></h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

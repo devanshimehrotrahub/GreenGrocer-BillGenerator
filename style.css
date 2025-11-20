@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  background: white;
+  padding: 25px;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input Section */
+
+.input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+#addBtn {
+  flex: 1 1 100%;
+  padding: 12px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#addBtn:hover {
+  background: #45a049;
+}
+
+/* TABLE - now fully responsive without scrolling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 15px;
+  word-wrap: break-word;
+  white-space: normal; /* Allows wrapping */
+}
+
+.removeBtn {
+  padding: 6px 10px;
+  background: #d9534f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.removeBtn:hover {
+  background: #c9302c;
+}
+
+.total-section {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.total-section h3 {
+  font-size: 22px;
+  color: #333;
+}
+
+/* --------------------------
+   MOBILE VERSION (No scrolling)
+--------------------------- */
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .input-group {
+    flex: 1 1 100%;
+  }
+
+  #addBtn {
+    font-size: 16px;
+  }
+
+  /* Table shrinks beautifully */
+  table th,
+  table td {
+    padding: 8px 5px;
+    font-size: 13px;
+  }
+
+  table th:nth-child(2),
+  table th:nth-child(3),
+  table th:nth-child(4),
+  table td:nth-child(2),
+  table td:nth-child(3),
+  table td:nth-child(4) {
+    width: 22%;
+  }
+
+  table td:nth-child(1) {
+    width: 30%;
+  }
+
+  .total-section h3 {
+    font-size: 18px;
+  }
+}
